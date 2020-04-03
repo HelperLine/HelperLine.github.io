@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/HelperLineOrg/static/css/main.5f361e03.chunk.css",
+    "main.js": "/HelperLineOrg/static/js/main.809b24d4.chunk.js",
+    "main.js.map": "/HelperLineOrg/static/js/main.809b24d4.chunk.js.map",
+    "runtime-main.js": "/HelperLineOrg/static/js/runtime-main.7b4b3b17.js",
+    "runtime-main.js.map": "/HelperLineOrg/static/js/runtime-main.7b4b3b17.js.map",
+    "static/js/2.b1a9349f.chunk.js": "/HelperLineOrg/static/js/2.b1a9349f.chunk.js",
+    "static/js/2.b1a9349f.chunk.js.map": "/HelperLineOrg/static/js/2.b1a9349f.chunk.js.map",
+    "index.html": "/HelperLineOrg/index.html",
+    "precache-manifest.b41202f528170f31b2edb6f9485276de.js": "/HelperLineOrg/precache-manifest.b41202f528170f31b2edb6f9485276de.js",
+    "service-worker.js": "/HelperLineOrg/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/HelperLineOrg/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.b1a9349f.chunk.js.LICENSE.txt": "/HelperLineOrg/static/js/2.b1a9349f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/HelperLineOrg/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b4b3b17.js",
+    "static/js/2.b1a9349f.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.809b24d4.chunk.js"
+  ]
+}
