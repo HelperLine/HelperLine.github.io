@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/HelperLineOrg/static/css/main.5f361e03.chunk.css",
-    "main.js": "/HelperLineOrg/static/js/main.809b24d4.chunk.js",
-    "main.js.map": "/HelperLineOrg/static/js/main.809b24d4.chunk.js.map",
-    "runtime-main.js": "/HelperLineOrg/static/js/runtime-main.7b4b3b17.js",
-    "runtime-main.js.map": "/HelperLineOrg/static/js/runtime-main.7b4b3b17.js.map",
-    "static/js/2.b1a9349f.chunk.js": "/HelperLineOrg/static/js/2.b1a9349f.chunk.js",
-    "static/js/2.b1a9349f.chunk.js.map": "/HelperLineOrg/static/js/2.b1a9349f.chunk.js.map",
-    "index.html": "/HelperLineOrg/index.html",
-    "precache-manifest.b41202f528170f31b2edb6f9485276de.js": "/HelperLineOrg/precache-manifest.b41202f528170f31b2edb6f9485276de.js",
-    "service-worker.js": "/HelperLineOrg/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/HelperLineOrg/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.b1a9349f.chunk.js.LICENSE.txt": "/HelperLineOrg/static/js/2.b1a9349f.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/HelperLineOrg/static/media/logo.5d5d9eef.svg"
+    "main.css": "/project-page/static/css/main.5f361e03.chunk.css",
+    "main.js": "/project-page/static/js/main.62db1726.chunk.js",
+    "main.js.map": "/project-page/static/js/main.62db1726.chunk.js.map",
+    "runtime-main.js": "/project-page/static/js/runtime-main.49141337.js",
+    "runtime-main.js.map": "/project-page/static/js/runtime-main.49141337.js.map",
+    "static/js/2.b1a9349f.chunk.js": "/project-page/static/js/2.b1a9349f.chunk.js",
+    "static/js/2.b1a9349f.chunk.js.map": "/project-page/static/js/2.b1a9349f.chunk.js.map",
+    "index.html": "/project-page/index.html",
+    "precache-manifest.2865c21715dc5e256450f8401894fca0.js": "/project-page/precache-manifest.2865c21715dc5e256450f8401894fca0.js",
+    "service-worker.js": "/project-page/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/project-page/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.b1a9349f.chunk.js.LICENSE.txt": "/project-page/static/js/2.b1a9349f.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/project-page/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7b4b3b17.js",
+    "static/js/runtime-main.49141337.js",
     "static/js/2.b1a9349f.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.809b24d4.chunk.js"
+    "static/js/main.62db1726.chunk.js"
   ]
 }
