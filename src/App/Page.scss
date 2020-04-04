@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.BannerWindow {
+
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .Image {
+        margin: 50px 0 25px 0;
+        width: 300px;
+    }
+
+    .TabPaper {
+        max-width: 96vw;
+        margin: 0 2vw;
+        padding: 0;
+
+        height: auto;
+        overflow-x: scroll;
+    }
+}
+
+.ContentContainer {
+    margin-top: 25px;
+
+    .ContentFlexBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

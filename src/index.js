@@ -1,13 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {Themer} from './Wrapper/Themer';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ReactDOM.render(<Themer/>,
   document.getElementById('root')
 );
 
