@@ -30,11 +30,13 @@
 }
 
 .ContentContainer {
-    margin-top: 25px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 
     .ContentFlexBox {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
 }

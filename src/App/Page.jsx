@@ -11,6 +11,12 @@ import clsx from 'clsx';
 import './Page.scss';
 import Container from "@material-ui/core/Container";
 
+import {VisionTab} from './Tabs/VisionTab/VisionTab';
+import {DetailsTab} from './Tabs/DetailsTab/DetailsTab';
+import {ProgressTab} from './Tabs/ProgressTab/ProgressTab';
+import {JobsTab} from './Tabs/JobsTab/JobsTab';
+
+
 const useStyles = makeStyles({
     root: {
         flexGrow: 1,
@@ -34,16 +40,16 @@ export const Page = (props) => {
 
     switch (tab.tab) {
         case "vision":
-            tabContent = "Vision";
+            tabContent = <VisionTab/>;
             break;
         case "details":
-            tabContent = "Details";
+            tabContent = <DetailsTab/>;
             break;
         case "progress":
-            tabContent = "Progress";
+            tabContent = <ProgressTab/>;
             break;
         case "jobs":
-            tabContent = "Jobs";
+            tabContent = <JobsTab/>;
             break;
         default:
             tabContent = "";
@@ -70,7 +76,7 @@ export const Page = (props) => {
                     </Tabs>
                 </Paper>
             </div>
-            <Container maxWidth="lg" className="ContentContainer">
+            <Container maxWidth="sm" className="ContentContainer">
                 <div className="ContentFlexBox">
                     {tabContent}
                 </div>
