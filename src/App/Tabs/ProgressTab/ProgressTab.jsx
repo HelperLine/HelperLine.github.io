@@ -90,9 +90,11 @@ export const ProgressTab = (props) => {
 
 
     return (
-        <React.Fragment>
-            <Typography variant="h4" className={classes.title}>Progress</Typography>
-        </React.Fragment>
+        <Container maxWidth="sm" className="TopContainer BottomContainer">
+            <div className="ContentFlexBox">
+                <Typography variant="h4" className={classes.title}>Progress</Typography>
+            </div>
+        </Container>
     );
 };
 

@@ -90,9 +90,11 @@ export const JobsTab = (props) => {
 
 
     return (
-        <React.Fragment>
-            <Typography variant="h4" className={classes.title}>Jobs</Typography>
-        </React.Fragment>
+        <Container maxWidth="sm" className="TopContainer BottomContainer">
+            <div className="ContentFlexBox">
+                <Typography variant="h4" className={classes.title}>Jobs</Typography>
+            </div>
+        </Container>
     );
 };
 

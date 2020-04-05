@@ -34,7 +34,7 @@ export const Page = (props) => {
 
     const classes = useStyles();
 
-    let [tab, setTab] = useState({tab: "vision"});
+    let [tab, setTab] = useState({tab: "details"});
 
     let tabContent;
 
@@ -76,11 +76,7 @@ export const Page = (props) => {
                     </Tabs>
                 </Paper>
             </div>
-            <Container maxWidth="sm" className="ContentContainer">
-                <div className="ContentFlexBox">
-                    {tabContent}
-                </div>
-            </Container>
+            {tabContent}
         </div>
     );
 };
