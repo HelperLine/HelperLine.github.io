@@ -209,6 +209,17 @@ export const TaskList = [
 
 
     {
+        name: "Add footer to page",
+        description: (
+            <React.Fragment>
+                The footer shall include links to: About (this page), Source Code (GitHub)
+            </React.Fragment>
+        ),
+        status: "to do"
+    },
+
+
+    {
         name: "Frontend - Landing Page when logged in",
         description: (
             <React.Fragment>
