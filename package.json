@@ -2,7 +2,7 @@
   "name": "github-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://HelperLineOrg.github.io/project",
+  "homepage": "https://helperline.github.io/project",
   "dependencies": {
     "@material-ui/core": "^4.9.8",
     "@material-ui/icons": "^4.9.1",
