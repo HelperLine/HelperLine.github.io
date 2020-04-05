@@ -4,11 +4,14 @@ import {makeStyles} from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
+import {Task} from "./Task";
+
+import {TaskList} from "./TaskList";
 
 
 const useStyles = makeStyles(theme => ({
     root: {
-        flexGrow: 1,
+        width: '100%',
     },
     tab: {
         minWidth: 125,
@@ -64,27 +67,15 @@ export const ProgressTab = (props) => {
         );
     }
 
-    function paragraph(text) {
-        return (
-            <Typography variant="subtitle1" className={classes.paragraph}>
-                {text}
-            </Typography>
-        );
-    }
+    function renderTaskList(status) {
+        const task_list = TaskList.filter(task => task.status === status).map((task, index) => (
+            <Task status={task.status} name={task.name} description={task.description}/>
+        ));
 
-    function link(url) {
         return (
-            <a href={url} className={classes.pinkLink}>
-                {url}
-            </a>
-        );
-    }
-
-    function email(email) {
-        return (
-            <a href={"mailto:" + email} className={classes.pinkLink}>
-                {email}
-            </a>
+            <div className={clsx(classes.root, classes.margin4)}>
+                {task_list}
+            </div>
         );
     }
 
@@ -92,7 +83,22 @@ export const ProgressTab = (props) => {
     return (
         <Container maxWidth="sm" className="TopContainer BottomContainer">
             <div className="ContentFlexBox">
-                <Typography variant="h4" className={classes.title}>Progress</Typography>
+                <Typography variant="h4" className={classes.title}>Development Progress</Typography>
+
+                {subtitle("Released")}
+                {renderTaskList("released")}
+
+                {subtitle("Implemented but not released yet")}
+                {renderTaskList("done")}
+
+                {subtitle("In progress")}
+                {renderTaskList("in progress")}
+
+                {subtitle("To do")}
+                {renderTaskList("to do")}
+
+                {subtitle("Future ides")}
+                {renderTaskList("outlook")}
             </div>
         </Container>
     );
