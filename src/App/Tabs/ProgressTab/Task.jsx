@@ -16,7 +16,7 @@ import CloudDoneIcon from '@material-ui/icons/CloudDone';
 import DoneIcon from '@material-ui/icons/Done';
 import SettingsIcon from '@material-ui/icons/Settings';
 import AssignmentIcon from '@material-ui/icons/Assignment';
-import TimelineIcon from '@material-ui/icons/Timeline';
+import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 
 
 import './Task.scss';
@@ -97,7 +97,7 @@ export const Task = (props) => {
             icon = <AssignmentIcon className={clsx(classes.summaryIcon, classes.summaryIconToDo)}/>;
             break;
         default: // case "outlook"
-            icon = <TimelineIcon className={clsx(classes.summaryIcon, classes.summaryIconOutlook)}/>;
+            icon = <EmojiObjectsIcon className={clsx(classes.summaryIcon, classes.summaryIconOutlook)}/>;
             break;
     }
 

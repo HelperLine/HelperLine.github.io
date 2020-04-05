@@ -1,5 +1,24 @@
 
 import React from 'react';
+import {makeStyles} from "@material-ui/core/styles";
+
+
+const useStyles = makeStyles(theme => ({
+    pinkLink: {
+        color: theme.palette.secondary.main
+    },
+}));
+
+
+const Link = (props) => {
+    const classes = useStyles();
+
+    return (
+        <a href={props.url} className={classes.pinkLink}>
+            {props.url}
+        </a>
+    );
+};
 
 
 // possible status values: "released", "done", "in progress", "to do", "outlook"
@@ -116,10 +135,126 @@ export const TaskList = [
 
 
     {
-        name: "Frontend - Different Landing Page when logged in",
+        name: "Backend - Add phone number (+ verification)",
+        description: (
+            <React.Fragment>
+                Add all database fields.
+
+                <br/><br/>
+
+                Test out the Twilio SMS API.
+
+                <br/><br/>
+
+                Implement the actual SMS verification trigger.
+
+                <br/><br/>
+
+                Add REST-endpoint to enter phone number/resend verification.
+
+            </React.Fragment>
+        ),
+        status: "in progress"
+    },
+
+
+    {
+        name: "Frontend - Add phone number (+ verification)",
+        description: (
+            <React.Fragment>
+                Add phone number and resend verification button to account form
+            </React.Fragment>
+        ),
+        status: "in progress"
+    },
+
+
+    {
+        name: "Backend - Implement Call Forwarding",
+        description: (
+            <React.Fragment>
+                Add all database fields - without scheduling.
+
+                <br/><br/>
+
+                Test out call forwarding with Twilio.
+
+                <br/><br/>
+
+                Implement the actual forwarding.
+
+                <br/><br/>
+
+                Add REST-endpoint to toggle forwarding.
+
+            </React.Fragment>
+        ),
+        status: "to do"
+    },
+
+
+    {
+        name: "Frontend - Implement Call Forwarding",
+        description: (
+            <React.Fragment>
+                Conceptualize forward toggle panel.
+
+                <br/><br/>
+
+                Add call forwarding panel to calls tab (without time triggered forwarding schedule).
+            </React.Fragment>
+        ),
+        status: "to do"
+    },
+
+
+    {
+        name: "Frontend - Landing Page when logged in",
         description: (
             <React.Fragment>
                 Add the sidebar to landing page, hide login button, etc.
+            </React.Fragment>
+        ),
+        status: "outlook"
+    },
+
+
+    {
+        name: "Backend - Switching from Flask to Sanic",
+        description: (
+            <React.Fragment>
+                Currently our server side code is synchronous and blocking ...
+
+                <br/><br/>
+
+                Because we are using a lot of communication with our MongoDB Atlas
+                Cluster we definitely need to improve our server side code.
+
+                <br/><br/>
+
+                The best option for that would be to switch to Sanic: <Link url="https://sanicframework.org/"/>,&nbsp;
+                <Link url="https://github.com/huge-success/sanic"/>.
+            </React.Fragment>
+        ),
+        status: "outlook"
+    },
+
+
+    {
+        name: "Backend - Migrating from Heroku to GCP",
+        description: (
+            <React.Fragment>
+                Currently we are host the whole webapp and the hotline on Heroku.
+
+                <br/><br/>
+
+                However until now Heroku does not offer any Covid-19 related funding,
+                whereas GCP does.
+
+                <br/><br/>
+
+                We could easily switch to the <strong>GCP AppEngine</strong>. Deploying
+                and scaling seems to be super easy and fast.
             </React.Fragment>
         ),
         status: "outlook"

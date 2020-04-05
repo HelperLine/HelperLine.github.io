@@ -97,7 +97,7 @@ export const ProgressTab = (props) => {
                 {subtitle("To do")}
                 {renderTaskList("to do")}
 
-                {subtitle("Future ides")}
+                {subtitle("Future ideas")}
                 {renderTaskList("outlook")}
             </div>
         </Container>
