@@ -94,10 +94,14 @@ export const TaskList = [
         name: "Backend - Receive Calls",
         description: (
             <React.Fragment>
+                Replace the current survey with the actual hotline
+
+                <br/><br/>
+
                 Receive calls and store/update the caller profile as well as the call record in our database.
             </React.Fragment>
         ),
-        status: "done"
+        status: "released"
     },
 
     {
@@ -130,7 +134,7 @@ export const TaskList = [
                 Very straight forward.
             </React.Fragment>
         ),
-        status: "in progress"
+        status: "done"
     },
 
 
@@ -154,7 +158,7 @@ export const TaskList = [
 
             </React.Fragment>
         ),
-        status: "in progress"
+        status: "done"
     },
 
 
@@ -163,6 +167,44 @@ export const TaskList = [
         description: (
             <React.Fragment>
                 Add phone number and resend verification button to account form
+            </React.Fragment>
+        ),
+        status: "done"
+    },
+
+
+    {
+        name: "Backend - Add comments to calls",
+        description: (
+            <React.Fragment>
+                Possibility to store a comment with each call (in call record itself).
+
+                <br/><br/>
+
+                The helper can make notes about a call (no formatting just plan text).
+
+                <br/><br/>
+
+                When call is rejected that comment is removed.
+            </React.Fragment>
+        ),
+        status: "in progress"
+    },
+
+
+    {
+        name: "Frontend - Add comments to calls",
+        description: (
+            <React.Fragment>
+                A comment block as a multiline text field under every call record.
+
+                <br/><br/>
+
+                For now: save changes on blur. Don't want too many "submit"/"save"/... buttons.
+
+                <br/><br/>
+
+                A small cross/spinner/checked icon indicating that comment is unsaved/saving/saved
             </React.Fragment>
         ),
         status: "in progress"
@@ -189,7 +231,7 @@ export const TaskList = [
 
             </React.Fragment>
         ),
-        status: "to do"
+        status: "in progress"
     },
 
 
@@ -204,7 +246,7 @@ export const TaskList = [
                 Add call forwarding panel to calls tab (without time triggered forwarding schedule).
             </React.Fragment>
         ),
-        status: "to do"
+        status: "in progress"
     },
 
 
