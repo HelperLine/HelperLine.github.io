@@ -34,7 +34,7 @@ export const Page = (props) => {
 
     const classes = useStyles();
 
-    let [tab, setTab] = useState({tab: "progress"});
+    let [tab, setTab] = useState({tab: "vision"});
 
     let tabContent;
 
