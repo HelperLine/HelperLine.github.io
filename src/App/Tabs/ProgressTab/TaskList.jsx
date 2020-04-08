@@ -24,38 +24,6 @@ const Link = (props) => {
 // possible status values: "released", "done", "in progress", "to do", "outlook"
 
 export const TaskList = [
-    {
-        name: "Full Stack - Change Email",
-        description: (
-            <React.Fragment>
-                New confirmation email! Keep user logged in and change his login data/cookies
-                for server communication.
-
-                <br/><br/>
-
-                We currently only support this when the email has not been confirmed yet!
-
-                <br/><br/>
-
-                Not a top priority to make it work for changing the email afterwards. Security
-                question: Doing bad stuff on our platform and changing email afterwards. We need
-                some mechanism of storing these permanently - as bad as it sounds ...
-            </React.Fragment>
-        ),
-        status: "released"
-    },
-
-
-    {
-        name: "Full Stack - Change Password",
-        description: (
-            <React.Fragment>
-                Popup on account page for changing your password afterwards.
-            </React.Fragment>
-        ),
-        status: "released"
-    },
-
 
     {
         name: "Frontend - New Landing Page",
@@ -188,7 +156,7 @@ export const TaskList = [
                 When call is rejected that comment is removed.
             </React.Fragment>
         ),
-        status: "in progress"
+        status: "done"
     },
 
 
@@ -207,7 +175,7 @@ export const TaskList = [
                 A small cross/spinner/checked icon indicating that comment is unsaved/saving/saved
             </React.Fragment>
         ),
-        status: "in progress"
+        status: "done"
     },
 
 
@@ -251,10 +219,40 @@ export const TaskList = [
 
 
     {
-        name: "Add footer to page",
+        name: "Frontend - Translate all the new features",
+        description: (
+            <React.Fragment>
+                For now only english and german.
+            </React.Fragment>
+        ),
+        status: "in progress"
+    },
+
+
+    {
+        name: "Frontend - Add footer to page",
         description: (
             <React.Fragment>
                 The footer shall include links to: About (this page), Source Code (GitHub)
+            </React.Fragment>
+        ),
+        status: "to do"
+    },
+
+    {
+        name: "FullStack - Refined error messages",
+        description: (
+            <React.Fragment>
+                More precise error messages.
+
+                <br/><br/>
+
+                Modify Client "Error Snackbar". New version: Permanent with close icon.
+                Maybe at least "success" will be non permanent.
+
+                <br/><br/>
+
+                Separate React component for Error Message.
             </React.Fragment>
         ),
         status: "to do"
@@ -266,6 +264,26 @@ export const TaskList = [
         description: (
             <React.Fragment>
                 Add the sidebar to landing page, hide login button, etc.
+            </React.Fragment>
+        ),
+        status: "outlook"
+    },
+
+
+    {
+        name: "FullStack - Reduce data transfer",
+        description: (
+            <React.Fragment>
+                Currently with most requests, the result gets send back to the client in the form of the full
+                account/calls data. The frontend state changes only a little bit (e.g. fulfilling a call).
+
+                <br/><br/>
+
+                A full fetch after every operation is totally unnecessary!
+
+                <br/><br/>
+
+                Goal: Further reduced server load by reducing the amount fetching data that the client already has.
             </React.Fragment>
         ),
         status: "outlook"
@@ -308,6 +326,26 @@ export const TaskList = [
 
                 We could easily switch to the <strong>GCP AppEngine</strong>. Deploying
                 and scaling seems to be super easy and fast.
+            </React.Fragment>
+        ),
+        status: "outlook"
+    },
+
+
+    {
+        name: "Full Stack - Add new call categories",
+        description: (
+            <React.Fragment>
+                Add new call categories. Types: "question about the hotline", "local", "global",
+                "local but with non-local helper".
+
+                <br/><br/>
+
+                Add these options to hotline.
+
+                <br/><br/>
+
+                Display these types to volunteer.
             </React.Fragment>
         ),
         status: "outlook"
