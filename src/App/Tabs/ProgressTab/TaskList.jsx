@@ -178,6 +178,20 @@ export const TaskList = [
         status: "done"
     },
 
+    {
+        name: "FullStack - Implement Online/Offline switch",
+        description: (
+            <React.Fragment>
+                Online = Calls get forwarded. Going inline is only possible if the number is confirmed!
+
+                <br/><br/>
+
+                Frontend -> Toggle Button on Calls page next to "Accept Call"
+            </React.Fragment>
+        ),
+        status: "done"
+    },
+
 
     {
         name: "Backend - Implement Call Forwarding",
@@ -214,7 +228,7 @@ export const TaskList = [
                 Add call forwarding panel to calls tab (without time triggered forwarding schedule).
             </React.Fragment>
         ),
-        status: "in progress"
+        status: "done"
     },
 
 
@@ -230,6 +244,17 @@ export const TaskList = [
 
 
     {
+        name: "Frontend - Translate all the new features",
+        description: (
+            <React.Fragment>
+                For now only english and german.
+            </React.Fragment>
+        ),
+        status: "to do"
+    },
+
+
+    {
         name: "Frontend - Add footer to page",
         description: (
             <React.Fragment>
@@ -238,6 +263,7 @@ export const TaskList = [
         ),
         status: "to do"
     },
+
 
     {
         name: "FullStack - Refined error messages",
@@ -253,6 +279,28 @@ export const TaskList = [
                 <br/><br/>
 
                 Separate React component for Error Message.
+            </React.Fragment>
+        ),
+        status: "to do"
+    },
+
+
+    {
+        name: "Deploy - Secure Environment Variables on GCP App Engine",
+        description: (
+            <React.Fragment>
+                Probably quite easy.
+            </React.Fragment>
+        ),
+        status: "to do"
+    },
+
+
+    {
+        name: "Deploy - Custom Domain on GCP App Engine",
+        description: (
+            <React.Fragment>
+                First test it on another domain, then do the full turnover.
             </React.Fragment>
         ),
         status: "to do"
@@ -312,7 +360,7 @@ export const TaskList = [
 
 
     {
-        name: "Backend - Migrating from Heroku to GCP",
+        name: "Deploy - Migrating from Heroku to GCP",
         description: (
             <React.Fragment>
                 Currently we are host the whole webapp and the hotline on Heroku.
@@ -328,7 +376,7 @@ export const TaskList = [
                 and scaling seems to be super easy and fast.
             </React.Fragment>
         ),
-        status: "outlook"
+        status: "in progress"
     },
 
 
