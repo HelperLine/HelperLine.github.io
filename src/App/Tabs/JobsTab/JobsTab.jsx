@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import {makeStyles} from '@material-ui/core/styles';
-import clsx from 'clsx';
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 
@@ -57,35 +56,11 @@ export const JobsTab = (props) => {
 
     const classes = useStyles();
 
-    function subtitle(text) {
-        return (
-            <Typography variant="h5" className={classes.subtitle}>
-                {text}
-            </Typography>
-        );
-    }
-
     function paragraph(text) {
         return (
             <Typography variant="subtitle1" className={classes.paragraph}>
                 {text}
             </Typography>
-        );
-    }
-
-    function link(url) {
-        return (
-            <a href={url} className={classes.pinkLink}>
-                {url}
-            </a>
-        );
-    }
-
-    function email(email) {
-        return (
-            <a href={"mailto:" + email} className={classes.pinkLink}>
-                {email}
-            </a>
         );
     }
 

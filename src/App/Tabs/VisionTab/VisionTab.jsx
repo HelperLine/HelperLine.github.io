@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import {makeStyles} from '@material-ui/core/styles';
-import clsx from 'clsx';
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 

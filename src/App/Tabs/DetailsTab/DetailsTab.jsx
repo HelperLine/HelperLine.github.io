@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import {makeStyles} from '@material-ui/core/styles';
-import clsx from 'clsx';
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 
@@ -9,6 +8,7 @@ import Container from "@material-ui/core/Container";
 import Sketch1 from '../../../images/Call_Assignment_English.svg';
 import Sketch2 from '../../../images/Online_Switch_English.svg';
 import Sketch3 from '../../../images/Filter_Criteria_English.svg';
+import clsx from "clsx";
 
 
 const useStyles = makeStyles(theme => ({
@@ -47,8 +47,13 @@ const useStyles = makeStyles(theme => ({
         marginBottom: theme.spacing(2),
     },
     paragraph: {
-        textAlign: "justify",
-        marginBottom: theme.spacing(2),
+        width: "100%",
+        textAlign: "left",
+    },
+    list: {
+        width: "calc(100% - 30px)",
+        marginLeft: "30px",
+        textAlign: "left",
     },
     pinkLink: {
         color: theme.palette.secondary.main
@@ -64,13 +69,13 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-export const DetailsTab = (props) => {
+export const DetailsTab = () => {
 
     const classes = useStyles();
 
     function subtitle(text) {
         return (
-            <Typography variant="h5" className={classes.subtitle}>
+            <Typography variant="h5" className={clsx(classes.subtitle, classes.margin2)}>
                 {text}
             </Typography>
         );
@@ -78,25 +83,17 @@ export const DetailsTab = (props) => {
 
     function paragraph(text) {
         return (
-            <Typography variant="subtitle1" className={classes.paragraph}>
+            <Typography variant="subtitle1" className={clsx(classes.paragraph, classes.margin2)}>
                 {text}
             </Typography>
         );
     }
 
-    function link(url) {
+    function list(text) {
         return (
-            <a href={url} className={classes.pinkLink}>
-                {url}
-            </a>
-        );
-    }
-
-    function email(email) {
-        return (
-            <a href={"mailto:" + email} className={classes.pinkLink}>
-                {email}
-            </a>
+            <Typography variant="subtitle1" className={classes.list}>
+                {text}
+            </Typography>
         );
     }
 
@@ -119,13 +116,23 @@ export const DetailsTab = (props) => {
 
                     {subtitle("The Process of Assigning Calls")}
 
-                    {paragraph(
-                        <React.Fragment>
-                            Our strategy is to <strong>offer both services</strong>: <strong>Manually accepting calls
-                            </strong>whenever the user want to and <strong>Call forwarding</strong> only if the user
-                            sets it up. Not user gets calls forwarded without explicitly setting it up.
-                        </React.Fragment>
-                    )}
+                    <Typography variant="subtitle1" className={clsx(classes.paragraph)}>
+                        Our strategy is to <strong>offer both services</strong>:
+                    </Typography>
+                    <Typography variant="subtitle1" className={clsx(classes.list)}>
+                        <ul>
+                            <li>
+                                <strong>Manually accepting calls</strong> whenever the user wants to
+                            </li>
+                            <li>
+                                <strong>Call forwarding</strong> only if the user sets it up
+                            </li>
+                        </ul>
+                    </Typography>
+
+                    <Typography variant="subtitle1" className={clsx(classes.paragraph, classes.margin4)}>
+                        No user will be called directly without explicitly setting it up!
+                    </Typography>
 
                     {paragraph(
                         <React.Fragment>
