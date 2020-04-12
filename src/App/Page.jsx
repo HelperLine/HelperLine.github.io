@@ -9,11 +9,9 @@ import Tab from '@material-ui/core/Tab';
 import clsx from 'clsx';
 
 import './Page.scss';
-import Container from "@material-ui/core/Container";
 
 import {VisionTab} from './Tabs/VisionTab/VisionTab';
 import {DetailsTab} from './Tabs/DetailsTab/DetailsTab';
-import {ProgressTab} from './Tabs/ProgressTab/ProgressTab';
 import {JobsTab} from './Tabs/JobsTab/JobsTab';
 
 
@@ -45,9 +43,6 @@ export const Page = (props) => {
         case "details":
             tabContent = <DetailsTab/>;
             break;
-        case "progress":
-            tabContent = <ProgressTab/>;
-            break;
         case "jobs":
             tabContent = <JobsTab/>;
             break;
@@ -71,7 +66,6 @@ export const Page = (props) => {
                     >
                         <Tab value="vision" label="Vision" className={classes.tab}/>
                         <Tab value="details" label="Details" className={classes.tab}/>
-                        <Tab value="progress" label="Progress" className={classes.tab}/>
                         <Tab value="jobs" label="Jobs" className={classes.tab}/>
                     </Tabs>
                 </Paper>

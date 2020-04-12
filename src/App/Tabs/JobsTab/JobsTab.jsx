@@ -46,6 +46,7 @@ const useStyles = makeStyles(theme => ({
         marginBottom: theme.spacing(2),
     },
     pinkLink: {
+        textDecoration: "none",
         color: theme.palette.secondary.main
     },
 
@@ -93,6 +94,15 @@ export const JobsTab = (props) => {
         <Container maxWidth="sm" className="TopContainer BottomContainer">
             <div className="ContentFlexBox">
                 <Typography variant="h4" className={classes.title}>Jobs</Typography>
+
+                {paragraph(
+                    <React.Fragment>
+                        Coming soon! Until then: see&nbsp;
+                        <a className={classes.pinkLink}
+                           href="https://github.com/Hilfe-am-Ohr/task-collection/blob/master/jobs.md"
+                           target="_blank" rel="noopener noreferrer"><strong>jobs.md</strong></a>
+                    </React.Fragment>
+                )}
             </div>
         </Container>
     );
